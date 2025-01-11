@@ -13,13 +13,11 @@ func longestCommonPrefix(strs []string) string {
                 match = true
             } else {
                 match = false
-                break
+                return res
             }
         }
         if match {
             res+=string(c)
-        } else {
-            break
         }
         ptr++
     }
