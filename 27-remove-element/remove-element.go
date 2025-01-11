@@ -1,21 +1,10 @@
 func removeElement(nums []int, val int) int {
-    m:=make(map[int]int, 0)
-    for _,v := range nums {
-        if (v == val) {
-            continue
-        }
-        if _,exist:=m[v]; exist {
-            m[v]=m[v]+1
-        } else {
-            m[v]=0
+    w:=0
+    for r:=0;r<len(nums);r++ {
+        if nums[r]!=val {
+            nums[w] = nums[r]
+            w++
         }
     }
-    p:=0
-    for k,v:=range m {
-        for i:=0;i <= v;i++ {
-            nums[p]=k
-            p++
-        }
-    }
-    return p
+    return w
 }
