@@ -30,6 +30,10 @@ func minSum(nums1 []int, nums2 []int) int64 {
     //     return int64(minSum1+diff*-1)
     // }
     // return int64(minSum2+diff)
-    return int64(math.Max(float64(minSum1), float64(minSum2)))
+    if minSum1 > minSum2 {
+        return int64(minSum1)
+    }
+    return int64(minSum2)
+    // return int64(math.Max(float64(minSum1), float64(minSum2)))
     
 }
