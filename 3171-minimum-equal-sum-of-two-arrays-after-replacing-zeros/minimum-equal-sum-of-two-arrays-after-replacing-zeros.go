@@ -21,7 +21,7 @@ func minSum(nums1 []int, nums2 []int) int64 {
     minSum2:=sum2+count2
     // fmt.Println("minSum1: ", minSum1)
     // fmt.Println("minSum2: ", minSum2)
-    if (minSum1 < minSum2 && count1==0) || (minSum1 > minSum2 && count2 == 0) {
+    if (sum1 < minSum2 && count1==0) || (minSum1 > sum2 && count2 == 0) {
         return -1
     }
     // diff:=minSum1-minSum2
