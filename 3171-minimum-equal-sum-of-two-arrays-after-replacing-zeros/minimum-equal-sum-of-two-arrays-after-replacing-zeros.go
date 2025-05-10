@@ -24,11 +24,12 @@ func minSum(nums1 []int, nums2 []int) int64 {
     if (minSum1 < minSum2 && count1==0) || (minSum1 > minSum2 && count2 == 0) {
         return -1
     }
-    diff:=minSum1-minSum2
-    fmt.Println("diff: ", diff)
-    if diff < 0 {
-        return int64(minSum1+diff*-1)
-    }
-    return int64(minSum2+diff)
+    // diff:=minSum1-minSum2
+    // fmt.Println("diff: ", diff)
+    // if diff < 0 {
+    //     return int64(minSum1+diff*-1)
+    // }
+    // return int64(minSum2+diff)
+    return int64(math.Max(float64(minSum1), float64(minSum2)))
     
 }
