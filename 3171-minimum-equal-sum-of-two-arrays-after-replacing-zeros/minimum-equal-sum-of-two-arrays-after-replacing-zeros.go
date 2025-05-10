@@ -15,12 +15,12 @@ func minSum(nums1 []int, nums2 []int) int64 {
             count2+=1
         }
     }
-    fmt.Println(sum1)
-    fmt.Println(sum2)
+    // fmt.Println(sum1)
+    // fmt.Println(sum2)
     minSum1:= sum1+count1
     minSum2:=sum2+count2
-    fmt.Println("minSum1: ", minSum1)
-    fmt.Println("minSum2: ", minSum2)
+    // fmt.Println("minSum1: ", minSum1)
+    // fmt.Println("minSum2: ", minSum2)
     if (minSum1 < minSum2 && count1==0) || (minSum1 > minSum2 && count2 == 0) {
         return -1
     }
