@@ -17,7 +17,5 @@ func maxDifference(s string) int {
             max = v
         }
     }
-    fmt.Println("min", min)
-    fmt.Println("max", max)
     return max-min
 }
