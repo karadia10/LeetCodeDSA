@@ -1,8 +1,8 @@
 func containsNearbyDuplicate(nums []int, k int) bool {
     m:=make(map[int]int, 0)
     for i,v:=range nums {
-        if _,exists:=m[v]; exists {
-            if math.Abs(float64(i-m[v])) <= float64(k) {
+        if val,exists:=m[v]; exists {
+            if i-val <= k {
                 return true
             }
         }
