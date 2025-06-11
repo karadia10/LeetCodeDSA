@@ -20,6 +20,5 @@ func wordPattern(pattern string, s string) bool {
            
         }
     }
-    fmt.Println(m)
     return true
 }
