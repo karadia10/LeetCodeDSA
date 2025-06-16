@@ -10,14 +10,10 @@ func removeElements(head *ListNode, val int) *ListNode {
     curr:=tmp
     for curr != nil && curr.Next != nil {
         if curr.Next.Val == val {
-            // fmt.Println("curr: ",curr)
             curr.Next = curr.Next.Next
-            // fmt.Println("curr next", curr.Next)
-            // fmt.Println("curr updated: ",curr)
-        } else{
+        } else {
             curr = curr.Next
         }
-        // fmt.Println("curr new: ", curr)
     }
     return tmp.Next
 }
